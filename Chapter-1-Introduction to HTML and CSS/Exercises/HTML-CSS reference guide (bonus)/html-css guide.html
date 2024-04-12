@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-CSS Reference Guide</title>
+    <!--This is the link to the CSS stylesheet.-->
+    <link rel="stylesheet" href="html-css guide.css">
+</head>
+<body>
+  <main>
+    <div id="heading">
+       <h1>HTML-CSS Reference Guide</h1> 
+    </div>
+    <div class="subheading">
+      <h2>HTML tags</h2>
+    </div>
+    <div>
+      <h3 class="tags"><code>&lt;head&gt;</code> Head Element</h3>
+      <p class="description">The <code>&lt;head&gt;</code> element contains general information about an HTML page that isn't 
+         displayed on the page itself. This information is called metadata and includes things like the title of the HTML document
+         and links to stylesheets.</p>
+      <div class="example">
+        <pre>
+          <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              &lt;head&gt;
+                &lt;!-- Metadata is contained in this element--&gt;
+              &lt;/head&gt;
+            &lt;/html&gt;
+          </code>
+        </pre>
+      </div>
+    </div>
+    <div>
+      <h3 class="tags"><code>&lt;title&gt;</code> Title Element</h3>
+      <p class="description">The <code>&lt;title&gt;</code> element contains a text that defines the title of an HTML document. 
+         The title is displayed in the browser's title bar or tab in which the HTML page is displayed. 
+         The <code>&lt;title&gt;</code> element can only be contained inside a document's <code>&lt;head&gt;</code> element.</p>
+      <div class="example">
+        <pre>
+          <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+               &lt;head&gt;
+                 &lt;title&gt;Title of the HTML page&lt;/title&gt;
+               &lt;/head&gt;
+            &lt;/html&gt;
+          </code>
+        </pre>
+      </div>
+    </div>
+    <div>
+      <h3 class="tags"><code>&lt;body&gt;</code> Body Element</h3>
+      <p class="description">The <code>&lt;body&gt;</code> element represents the content of an HTML document. Content inside 
+        <code>&lt;body&gt;</code> tags are rendered on the web browsers.</p>
+      <p class="description"><strong>Note:</strong> There can be only one <code>&lt;body&gt;</code> element in a document.</p>
+      <div class="example">
+        <pre>
+          <code>
+            &lt;body&gt;
+              &lt;h1&gt;This is the heading&lt;/h1&gt;
+            &lt;/body&gt;
+          </code>
+        </pre>
+      </div>
+    </div>
+    <div>
+      <h3 class="tags"><code>&lt;p&gt;</code> Paragraph Element</h3>
+      <p class="description">The <code>&lt;p&gt;</code> paragraph element contains and displays a block of text. When we use 
+         the <code>&lt;p&gt;</code> tag, the web browser automatically inserts a single blank line before and after each 
+         <code>&lt;p&gt;</code> element to make the text more readable.</p>
+      <div class="example">
+        <pre>
+          <code>
+            &lt;p&gt;This is a block of text! Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+          </code>
+        </pre>
+      </div>
+    </div>
+    <div>
+      <h3 class="tags"><code>&lt;h1&gt;-&lt;h6&gt;</code> Heading Elements</h3>
+      <p class="'description">HTML can use six different levels of heading elements. The heading elements are ordered from the 
+         highest level <code>&lt;h1&gt;</code> which defines the most important tag, to the lowest level <code>&lt;h6&gt;</code> 
+         that defines  the least.</p>
+      <div class="example">
+        <pre>
+          <code>
+            &lt;h1&gt;Breaking News&lt;/h1&gt;
+            &lt;h2&gt;This is the 1st subheading&lt;/h2&gt;
+            &lt;h3&gt;This is the 2nd subheading&lt;/h3&gt;
+            &lt;h4&gt;This is the 3rd subheading&lt;/h4&gt;
+            &lt;h5&gt;This is the 4th subheading&lt;/h5&gt;
+            &lt;h6&gt;This is the 5th subheading&lt;/h6&gt;
+          </code>
+        </pre>
+      </div>
+    </div>
+    <div>
+      <h3 class="tags"><code>&lt;em&gt;</code> Emphasis Element</h3>
+      <p class="description">The <code>&lt;em&gt;</code> element emphasizes text and browsers will usually italicize the 
+         emphasized text by default.</p>
+      <div class="example">
+        <pre>
+          <code>
+            &lt;p&gt;This &lt;em&gt;<em>word</em>&lt;/em&gt; will be emphasized in italics.&lt;/p&gt;
+          </code>
+        </pre>
+      </div>     
+    </div>
+    <div>
+      <h3 class="tags"><code>&lt;strong&gt;</code> Strong Element</h3>
+      <p class="description">The <code>&lt;strong&gt;</code> element highlights important, serious, or urgent text and 
+         browsers will normally render this highlighted text in bold by default.</p>
+      <div class="example">
+        <pre>
+          <code>
+            &lt;p&gt;This is &lt;strong&gt;<strong>important</strong>&lt;/strong&gt; text!&lt;/p&gt;
+          </code>
+        </pre>
+      </div>
+    </div>
+    <div>
+      <h3 class="tags"><code>&lt;a&gt;</code> Anchor Element</h3>
+      <p class="description">The <code>&lt;a&gt;</code> anchor element is used to create hyperlinks in an HTML document.
+         The hyperlinks can point to other webpages, files on the same server, a location on the same page, or any other 
+         URL via the hyperlink reference attribute, <code>href</code>. The <code>href</code> determines the location the 
+         anchor element points to.</p>
+      <div class="example">
+        <pre>
+          <code>
+            &lt;a href="http://www.google.com">Visit this site&lt;/a&gt;
+          </code>
+        </pre>
+      </div>
+    </div>
+    <div>
+      <h3 class="tags"><code>&lt;img&gt;</code> Image Element</h3>
+      <p class="description">HTML image <code>&lt;img&gt;</code> elements embed images in documents. The <code>src</code>
+         attribute contains the image URL and is mandatory. <code>&lt;img&gt;</code> is an <em>empty element</em> meaning 
+         it should not have a closing tag.</p>
+      <div class="example">
+        <pre>
+          <code>
+            &lt;img src="image.png"&gt;
+          </code>
+        </pre>
+      </div>
+    </div>
+    <div>
+      <h3 class="tags"><code>&lt;span&gt;</code> Span Element</h3>
+      <p class="description">The <code>&lt;span&gt;</code> element is an inline container for text and can be used to group
+         text for styling purposes. However, as <code>&lt;span&gt;</code> is a generic container to separate pieces of text 
+         from a larger body of text, its use should be avoided if a more semantic element is available.</p>
+      <div class="example">
+        <pre>
+          <code>
+            &lt;p&gt;&lt;span&gt;This text&lt;/span&gt; may be styled differently than the surrounding text.&lt;/p&gt;
+          </code>
+        </pre>
+      </div>
+    </div>
+    <div class="subheading">
+      <h2>CSS Properties</h2>
+    </div>
+    <div>
+      <h3 class="tags">Font Family</h3>
+      <p class="description">The <b>font-family</b> property allows us to change the particular font we are using. There
+         are five generic font families and your list must end with one of them since it's guaranteed to work. For instance,
+         “font-family: "Garamond", "Times", serif;”.</p>
+      <div class="example">
+        <pre>
+          <code>
+            h1 {
+            font-family: Times New Roman;
+            }
+
+            p {
+            font-family: Verdana;
+            }
+          </code>
+        </pre>
+      </div>
+    </div>
+    <div>
+      <h3 class="tags">Font Size</h3>
+      <p class="description"><b>Font-size</b> sets the size of the font and may be specified using a few different types but
+         the easiest to work with is pixels (px).</p>
+      <div class="example">
+        <pre>
+          <code>
+            h1 {
+            font-size: 30px;
+            }
+
+            p {
+            font-size: 16px;
+            }
+          </code>
+        </pre>
+      </div>
+    </div>
+    <div>
+      <h3 class="tags">Font Weight</h3>
+      <p class="description">The <b>font-weight</b> css property sets the thickness i.e increase the boldness or lightness of 
+         the font. It may be one of the following values: lighter, normal, bold or bolder. Some font families only have normal 
+         and bold weights. In this case if you specify lighter it will default back to normal and if you specify bolder it will
+         default back to bold.</p>
+      <div class="example">
+        <pre>
+          <code>
+            h1 {
+            font-weight: normal;
+            }
+
+            p {
+            font-weight: bold;
+            }
+          </code>
+        </pre>
+      </div>
+    </div>
+    <div>
+      <h3 class="tags">Color</h3>
+      <p class="description">The <b>color</b> property allows us to specify the colour of the text.</p>
+      <div class="example">
+        <pre>
+          <code>
+            h1 {
+            color: #9ACA42;
+            }
+
+            p {
+            color: #357180;
+            }
+          </code>
+        </pre>
+      </div>
+    </div>
+    <div>
+      <h3 class="tags">Background Color</h3>
+      <p class="description">The <b>background-color</b> property allows us to specify the background colour for the element.</p>
+      <div class="example">
+        <pre>
+          <code>
+            h1 {
+            background-color: #9ACA42;
+            }
+            
+            p {
+            background-color: #A0D2DC;
+            }
+          </code>
+        </pre>
+      </div>
+    </div>
+    <div>
+      <h3 class="tags">Padding</h3>
+      <p class="description"><b>Padding</b> refers to the space around out content.</p>
+      <p class="description">We may specify the padding in 3 methods:
+        <ul>
+          <li>A single value - in which case it will be applied to every side.</li>
+          <li>As two values - in which case the first unit specifies the top and bottom padding and the second unit the left and right padding.</li>
+          <li>As four values - in which case the first applies to the top, the second to the right, the third to the bottom and the fourth to the left.</li>
+       </ul>
+      </p>
+      <div class="example">
+        <pre>
+          <code>
+            h1 {
+            padding: 5px;
+            background-color: #9ACA42;
+            }
+
+            p {
+            padding: 5px 10px 8px 30px;
+            background-color: #A0D2DC;
+            }
+          </code>
+        </pre>
+      </div>
+    </div>
+    <div>
+      <h3 class="tags">Margin</h3>
+      <p class="description"><b>Margin</b> is similar to padding in that is affects the spacing around the content. However, it is a second area 
+         outside the padding.</p>
+      <div class="example">
+        <pre>
+          <code>
+            h1 {
+            margin: 10px;
+            background-color: #9ACA42;
+            }
+
+            p {
+            margin: 5px 10px 8px 30px;
+            background-color: #A0D2DC;
+            }
+          </code>
+        </pre>
+      </div>
+    </div>
+    <div>
+      <h3 class="tags">Border</h3>
+      <p class="description">The <b>border</b> is inbetween the padding and margin. </p>
+      <p class="description">The various aspects of the border which you may control are:
+        <ul>
+          <li>Its width.</li>
+          <li>Its colour.</li>
+          <li>Its style (none, dotted, dashed, solid, double, groove, ridge, inset, outset).</li>
+        </ul>
+      </p>
+      <div class="example">
+        <pre>
+          <code>
+            h1 {
+            border: 2px solid #E9B82B;
+            }
+
+            p {
+            border: 1px dashed #4D8353;
+            }
+          </code>
+        </pre>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

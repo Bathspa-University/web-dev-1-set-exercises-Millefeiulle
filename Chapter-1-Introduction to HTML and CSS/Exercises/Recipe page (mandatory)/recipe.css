@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+
+body {
+    font-family: 'Young Serif', serif;
+    background-color: lightblue;
+}
+
+main {
+    width: 100%;
+    max-width: 720px;
+    background-color: white;
+    border-radius: auto;
+    margin: auto;
+    padding: 40px;
+}
+
+p {
+    font-size: 16px;
+    color: #645452;
+    font-family: 'Outfit', sans-serif;
+}
+
+hr {
+    color: gray;
+    margin-bottom: 28px;
+}
+
+li {
+    margin-left: 8px;
+    padding-bottom: 12.8px;
+    color: #645452;
+    font-family: 'Outfit', sans-serif;
+}
+
+img {
+     height: auto;
+     border-radius: 10px;
+     width: auto;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 28px;
+    
+}
+
+ul {
+    list-style-position: inside;
+}
+
+.blondie-title {
+    font-size: 35.2px;
+    font-weight: 400;
+    color: black;
+    padding: 16px;
+}
+
+.description {
+    padding-bottom: 16px;
+}
+
+.prep-time {
+    border-radius: 16px;
+    background-color: #fff0db;
+    padding: 24px;
+    margin: 16px;
+}
+
+.prep-title {
+    color: #6E260E;
+    padding-bottom: 16px;
+    font-family: 'Outfit', sans-serif;   
+}
+
+.ingredients-title, .instructions-title, .notes-title {
+    color: #83654e;
+    font-weight: 400;
+    padding-bottom: 16px;
+}
+
+.ingredients, .instructions, .notes {
+    margin: 24px ;
+}
+
+.instruction-list {
+    color: #83654e;
+    margin-left: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.notes-text {
+    padding-bottom: 16px;
+    padding: 14px;
+    margin-bottom: auto;
+}
+
+
