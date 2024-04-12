@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+    margin-left:200px;
+    margin-right:200px;
+}
+#heading {
+   background-color: purple;
+   display: block;
+   margin: 0%;
+}
+.subheading {
+    background-color: #CCCCFF;
+}
+
+.description {
+    text-wrap: 30px;
+}
+.example {
+    background-color: #E6E6FA;
+    border-radius: 30px;
+}
